@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    /* font-size: 1rem; */
+    color: #0d2f53;
+    font-family: monospace, Times, serif;
+
+}
+nav{
+    font-family: monospace, Times, serif;
+
+}
+
+#login{
+    font-size: 1rem;
+}
+
+.footer-title{
+    color:#c0c0c0;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.link-hover{
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.fill-current{
+    color:#c0c0c0;
+    width:  1.2rem;
+
+}
