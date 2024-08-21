@@ -6,6 +6,9 @@ import imgHero from "./assets/ss.png";
 import imgHero1 from "./assets/herop.png";
 import Footer from "./Footer";
 import searchImg from "./assets/search.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function Home() {
   const [api, setapi] = useState([]);
   const [filter, setFilter] = useState([]);
@@ -49,9 +52,10 @@ function Home() {
     }
     //
   };
-
+  // const notify = () => toast("Wow so easy!");
   return (
     <section>
+      <ToastContainer autoClose={1000} />
       <section className="relative bg-60 h-[70vh] max-md:h-max">
         <Nav />
         <div className=" m-auto  flex justify-center">
@@ -125,7 +129,7 @@ function Home() {
                     if (localStorage.getItem("id") !== null) {
                       navigate(`/details/${e.rank}`);
                     } else {
-                      alert("You must Login");
+                      toast("Please login to continue");
                     }
                   }}
                   key={i}

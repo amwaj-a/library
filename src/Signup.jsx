@@ -54,7 +54,7 @@ navigate('/')
 {/* <Nav login={true}  title='signUp'/> */}
  <section  className='h-full
   max-sm:items-center max-sm:flex-col flex mt-3'>
-    <img  className='mt-10 w-[50%] h-[50vh] max-sm:w-56' src={imgHero1} alt="" />
+    <img  className='mt-10 w-[50%] h-[50vh]  max-sm:w-[70%]  max-sm:h-[70%] ' src={imgHero1} alt="" />
  <div className='w-[50%] max-sm:w-full 
 justify-center
   gap-3 flex flex-col 
@@ -139,7 +139,7 @@ setapi({...api,'password':e.target.value})
 <span className='text-red-500'>{errorText.all}</span>
 <span>Do have an account? <Link
  className='px-2 cursor-pointer text-20 font-bold'
-  to='/Login'>Sign Up.
+  to='/Login'>Login.
 </Link> </span>
 
 <br />

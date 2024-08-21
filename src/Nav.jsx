@@ -39,7 +39,7 @@ function Nav({login,title}) {
      localStorage.removeItem('id')
      navigat('/login')
    }}><ion-icon name="log-out-outline"></ion-icon></button> </li>
-  <li style={{display:loginn?'':'none'}}  >
+  <li className='px-3' style={{display:loginn?'':'none'}}  >
    <button className='' onClick={()=>{
      localStorage.removeItem('id')
      navigat('/login')
